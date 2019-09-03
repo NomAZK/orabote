@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'FiraSans_italic';
+	src: url('../fonts/FiraSans-Italic.eot');
+	src: local('Fira Sans Italic'), local('FiraSans-Italic'),
+		url('../fonts/') format('embedded-opentype'),
+		url('../fonts/FiraSans-Italic.woff') format('woff'),
+		url('../fonts/FiraSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'FiraSans_bold';
+	src: url('../fonts/FiraSans-Bold.eot');
+	src: local('Fira Sans Bold'), local('FiraSans-Bold'),
+		url('../fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FiraSans-Bold.woff') format('woff'),
+		url('../fonts/FiraSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FiraSans_light';
+	src: url('../fonts/FiraSansLight.eot');
+	src: local('Fira Sans Light'), local('FiraSansLight'),
+		url('../fonts/FiraSansLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FiraSansLight.woff') format('woff'),
+		url('../fonts/FiraSansLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FiraSans_regular';
+	src: url('../fonts/FiraSans.eot');
+	src: local('Fira Sans'), local('FiraSans'),
+		url('../fonts/FiraSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FiraSans.woff') format('woff'),
+		url('../fonts/FiraSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FiraSans_medium';
+	src: url('../fonts/FiraSansMedium.eot');
+	src: local('Fira Sans Medium'), local('FiraSansMedium'),
+		url('../fonts/FiraSansMedium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FiraSansMedium.woff') format('woff'),
+		url('../fonts/FiraSansMedium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@import "reset";
+@import "variables";
+@import "header-footer";
+@import "body";
+@import "page";
+@import "adaptive";

@@ -1,0 +1,233 @@
+@import "variables";
+a{
+text-decoration: none !important;
+line-height: normal;
+color: $bC;
+-webkit-transition: 300ms;
+-moz-transition: 300ms;
+-ms-transition: 300ms;
+-o-transition: 300ms;
+transition: 300ms;
+}
+a:hover{
+color: $hC;
+}
+body{ 
+width: 100%; 
+font-size: 16px;
+font-family: $font;
+margin: 0 auto;
+color: $bC;
+overflow-x: hidden;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 !important;
+    @media screen and (max-width: 1200px) {
+        width: 720px;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 0 15px !important;
+    }
+}
+input{
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+input[type="text"]:invalid,
+textarea:invalid{
+    box-shadow: none;
+}
+header *,
+footer *{
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+.to_up{
+    position: fixed;
+    bottom: 60px;
+    left: 35px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(#000,0.05);
+    i{
+        font-size: 26px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+/*
+    f041 - map marker
+    f10b - mobile
+    f095 - phone
+    f0e0 - envelope
+    f232 - whatsapp
+    f16d - insta
+    f09a - facebook
+    f104 - angle left
+    f105 - angle right
+    f099 - twitter
+    f189 - vk
+*/
+.map-marker:before{
+    content: '\f041';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.envelope:before{
+    content: '\f0e0';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.phone:before{
+    content: '\f095';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.insta:before{
+    content: '\f16d';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.facebook:before{
+    content: '\f09a';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.vk:before{
+    content: '\f189';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.twitter:before{
+    content: '\f099';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+.linkedin:before{
+    content: '\f08c';
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+/* call modal */
+.call-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 35px;
+    display: table;
+    background-color: $hC;
+    font-family: 'FontAwesome';
+    border-radius: 100%;
+    text-decoration: none!important;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.7);
+    outline: none;
+    z-index: 2;
+}
+.call-btn:hover {
+    animation-name: phone;
+    animation-iteration-count: 1;
+    animation-duration: 0.7s;
+}
+.call-btn i {
+    display: block;
+    font-size: 34px;
+    color: #fff;
+    margin-top: 25%;
+}
+.call-btn:after {
+    content: '';
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: 1px solid $hC;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+    animation-name: ring;
+}
+.call-btn:before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: 1px solid $hC;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+    animation-name: ring;
+}
+
+.call-btn:after {
+    animation-delay: 0.6s;
+}
+.call-btn:before {
+    animation-delay: 0.8s;
+}
+@media screen and (max-width: 991px) {
+    .call-btn {
+        width: 50px;
+        height: 50px;
+        padding-top: 13px;
+        right: 15px;
+        bottom: 30px;
+    }
+    .call-btn i {
+        font-size: 24px;
+        margin-top: 0;
+    }
+}
+@keyframes ring {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: scale(1.7);
+  }
+}
+@keyframes phone {
+  20% {
+   transform: rotate(-30deg); 
+  }
+
+  80% {
+    transform: rotate(390deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* call form */ 
+h1,h2{
+    font-size: 48px;
+    font-family: $fontBold;
+    color: $bC2;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    position: relative;
+}
+h2{
+    font-size: 36px;
+}
